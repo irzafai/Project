@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+  /* Footer */
+
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .footer {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    padding: 16px;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .footer-logo-img {
+    height: 32px;
+  }
+
+  .footer-logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 12px;
+    color: #333;
+  }
+
+  .footer-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+
+    margin: 0;
+  }
+
+  .footer-link {
+    font-size: 14px;
+    margin-right: 24px;
+    text-decoration: none;
+
+    color: #555;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+
+
+
+  .footer-divider {
+    margin: 24px 0;
+
+
+
+    border: 1px solid #e2e2e2;
+    width: 100%;
+  }
+
+  .footer-text {
+    font-size: 14px;
+    color: #888;
+
+
+    text-align: center;
+  }
+
+  .footer-text-link {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .footer-text-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<body>
+  <!-- Bagian 1 -->
+  <nav
+    class="relative text-gray-600 body-font bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img
+          src="https://i0.wp.com/www.grapheine.com/wp-content/uploads/2018/02/AJA-Portfolio-site.jpg?fit=1880%2C1160&ssl=1"
+          class="h-12" alt="MeAja Logo" />
+
+
+        <span class="text-3xl font-extrabold text-gray-100"></span>
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button"
+          class="text-white bg-orange-600 hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-6 py-3 dark:bg-orange-500 dark:hover:bg-orange-600 dark:focus:ring-orange-700 transition-colors duration-300">
+          Beli Sekarang
+        </button>
+
+
+
+        <button data-collapse-toggle="navbar-cta" type="button"
+          class="inline-flex items-center p-3 w-12 h-12 justify-center text-gray-100 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 transition-colors duration-300"
+          aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-gray-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:border-gray-700 shadow-md">
+          <li>
+            <a href="#"
+              class="block py-2 px-4 md:p-0 text-gray-100 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-orange-500 transition-colors duration-300"
+              aria-current="page">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-4 md:p-0 text-gray-100 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-orange-500 transition-colors duration-300">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-4 md:p-0 text-gray-100 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-orange-500 transition-colors duration-300">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-4 md:p-0 text-gray-100 rounded hover:bg-gray-700 md:hover:bg-transparent md:hover:text-orange-500 transition-colors duration-300">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Testing -->
+  <section class="text-gray-600 body-font relative">
+    <div class="container mx-auto flex px-5 py-48 items-center justify-center flex-col">
+      <div class="text-center lg:w-2/3 w-full relative z-10">
+        <h1 class="title-font sm:text-8xl text-[12vw] mb-8 font-extrabold text-white drop-shadow-lg">
+          MeAja
+        </h1>
+        <h3 class="mb-12 leading-relaxed text-3xl text-white font-semibold drop-shadow-md tracking-wide">
+          Rajanya mie pedas.
+        </h3>
+      </div>
+    </div>
+    <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+    <div class="absolute inset-0 bg-cover bg-center" style="
+          background-image: url('mie jepang (1).jpeg');
+          filter: brightness(50%);
+        "></div>
+  </section>
+
+  <!-- Bagian 2 -->
+  <section class="relative text-gray-600 body-font bg-gradient-to-r from-blue-900 via-gray-800 to-blue-900">
+    <div class="absolute inset-0"></div>
+    <div class="relative container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center relative z-10">
+        <h1
+          class="title-font sm:text-5xl text-4xl mb-4 font-extrabold text-gray-100 overflow-hidden bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200">
+          Apa itu MeAja?
+        </h1>
+        <p
+          class="mb-8 leading-relaxed text-gray-100 bg-gray-900 bg-opacity-80 p-6 rounded-lg shadow-lg text-lg font-light">
+          MeAja adalah merek mie yang telah dikenal luas sejak tahun 2007,
+          berkat tingkat kepedasannya yang ekstrem yang mampu membuat lidahmu
+          terbakar dan menangis. Dengan rasa yang intens dan pedas, MeAja
+          telah menjadi favorit di kalangan penggemar makanan pedas yang
+          mencari tantangan kuliner yang menggugah adrenalin.
+        </p>
+        <div class="flex justify-center"></div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-10 w-10">
+        <img
+          class="object-cover object-center rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-110"
+          alt="hero"
+          src="https://th.bing.com/th/id/OIP.Qp71p6-mlVLT_e5FgffedQHaEK?w=299&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 3 -->
+  <section class="text-gray-600 body-font bg-gradient-to-r from-blue-900 via-gray-800 to-blue-900">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-32">
+        <h1
+          class="sm:text-5xl text-4xl font-extrabold title-font mb-4 text-gray-900 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200">
+          Menu Terbaik
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-600">
+          Beberapa menu paling top menurut para customer kami
+        </p>
+        <hr class="border-t-2 border-gray-300 my-8" />
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Mie Pedas Lvl 2"
+              class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://th.bing.com/th/id/OIP.Dvc8iKXMLhyiHi9WtCI63wHaE6?w=256&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Mie Pedas Lvl 2
+              </h2>
+              <p class="text-gray-500">
+                Mie dengan level pedas yang pas untuk pemula
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Mie Pedas Lvl 10"
+              class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://th.bing.com/th/id/OIP.wrny8_eVv-i9v1l-qducjAHaFy?w=252&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Mie Pedas Lvl 10
+              </h2>
+              <p class="text-gray-500">Mie paling pedas yang ada di menu</p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Mie Bocil"
+              class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://th.bing.com/th/id/OIP.en38NALUCi9Sx3WeLRtSLQHaHa?w=192&h=193&c=7&r=0&o=5&dpr=1.5&pid=1.7" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Mie Bocil
+              </h2>
+              <p class="text-gray-500">
+                Mie tanpa rasa pedas untuk yang lebih memilih rasa ringan
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Mie Bakso"
+              class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://img.okezone.com/content/2018/12/14/298/1991295/sedapnya-mi-bakso-ekstra-pedas-dan-pangsit-goreng-isi-daging-ayam-nendang-banget-mBrSmBybkz.jpg" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Mie Bakso
+              </h2>
+              <p class="text-gray-500">
+                Perpaduan lezat antara mie dan bakso
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Bakso Tumpeng"
+              class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://awsimages.detik.net.id/community/media/visual/2020/09/02/pedasnya-bakso-tumpeng-dan-kawah-merapi-dengan-siraman-sambal-2.jpeg?w=700&q=90" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Bakso Tumpeng
+              </h2>
+              <p class="text-gray-500">
+                Bakso raksasa yang bisa dinikmati bersama keluarga
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Bakso Kematian"
+              class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://img-z.okeinfo.net/okz/500/library/images/2021/12/06/5wdher4naei3o3d4wfhw_20812.jpg" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Bakso Kematian
+              </h2>
+              <p class="text-gray-500">
+                Bakso dengan tingkat kepedasan ekstrem
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Mie Goreng"
+              class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://curupekspress.disway.id/upload/302665c8e1eb1b1a4dd41dc61dc5368c.png" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Mie Goreng
+              </h2>
+              <p class="text-gray-500">Mie goreng dengan bumbu spesial</p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Mie Kuah" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://cdn0-production-images-kly.akamaized.net/WMWYau911KEG2z2xGynpPvJnLl8=/0x977:1365x1746/673x379/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3086676/original/008955600_1585282979-shutterstock_1657488301.jpg" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Mie Kuah
+              </h2>
+              <p class="text-gray-500">Mie dengan kuah kaldu yang gurih</p>
+            </div>
+          </div>
+        </div>
+        <!-- Menu Item -->
+        <div class="p-4 lg:w-1/3 md:w-1/2 w-full">
+          <div
+            class="h-full flex flex-col items-center border border-gray-200 bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105">
+            <img alt="Mie Ayam" class="w-32 h-32 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mb-4"
+              src="https://th.bing.com/th/id/OIP.7bttWFKFc9hfRafbm2prXgHaE8?rs=1&pid=ImgDetMain" />
+            <div class="text-center">
+              <h2 class="text-gray-900 title-font text-lg font-semibold mb-2">
+                Mie Ayam
+              </h2>
+              <p class="text-gray-500">Mie ayam dengan topping ayam suwir</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 4 -->
+  <section class="text-gray-600 body-font bg-gradient-to-r from-blue-900 via-gray-800 to-blue-900">
+    <div class="container px-5 py-24 mx-auto">
+      <h1
+        class="text-5xl font-extrabold title-font text-gray-900 mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200">
+        Testimoni
+      </h1>
+      <hr class="border-t-2 border-gray-300 my-8" />
+      <div class="flex flex-wrap -m-4">
+        <!-- Testimonial 1 -->
+        <div class="p-4 md:w-1/2 w-full">
+          <div
+            class="h-full bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-6 h-6 text-blue-400 mb-4"
+              viewBox="0 0 975.036 975.036">
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+              </path>
+            </svg>
+            <p class="leading-relaxed mb-6 text-gray-600">
+              Mie ini benar-benar luar biasa! Rasanya sangat lezat dengan
+              tingkat kepedasan yang menggigit. Setiap gigitan membuat lidah
+              saya terasa terbakar, tapi justru itulah yang membuatnya semakin
+              nikmat. Kuahnya gurih dan bumbunya meresap sempurna ke dalam
+              mie. Meski pedasnya membuat saya hampir menyerah, saya tetap
+              ingin memakannya sampai habis. Pengalaman yang tak terlupakan
+              bagi pencinta makanan pedas!
+            </p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="https://i.pinimg.com/736x/90/05/ef/9005ef6f70bb2a49db4c7c60e0185d3e.jpg"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center transform transition duration-500 hover:scale-110" />
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900 text-lg">Saguya retayoshi</span>
+                <span class="text-gray-500 text-sm">Artis</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="p-4 md:w-1/2 w-full">
+          <div
+            class="h-full bg-white p-8 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-6 h-6 text-blue-400 mb-4"
+              viewBox="0 0 975.036 975.036">
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+              </path>
+            </svg>
+            <p class="leading-relaxed mb-6 text-gray-600">
+              Mie ini benar-benar mengesankan! Pedasnya bukan main, langsung
+              terasa dari gigitan pertama. Meski lidah terasa panas, saya
+              tidak bisa berhenti makan karena rasanya yang begitu lezat.
+              Kuahnya kaya rasa dan mie-nya kenyal sempurna. Setiap suapan
+              membawa perpaduan antara rasa pedas dan gurih yang membuat saya
+              ingin terus menikmatinya. Untuk penggemar makanan pedas, ini
+              adalah pilihan yang tepat!
+            </p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="https://teknogram.id/gallery/foto-profil-wa/keren/pp-wa-kosong-keren-4.jpg"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center transform transition duration-500 hover:scale-110" />
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900 text-lg">Kurote sakashi</span>
+                <span class="text-gray-500 text-sm">Artis</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bagian 5 -->
+  <section class="text-gray-600 body-font relative bg-gradient-to-r from-blue-900 via-gray-800 to-blue-900">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1
+          class="sm:text-4xl text-3xl font-semibold title-font mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200">
+          Pesan Sekarang
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700">
+          Ayo pesan sekarang sebelum kehabisan!
+        </p>
+      </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600">Nama</label>
+              <input type="text" id="name" name="name"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 transition-colors duration-200 ease-in-out shadow-sm hover:shadow-md" />
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600">Alamat</label>
+              <input type="text" id="email" name="email"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-4 transition-colors duration-200 ease-in-out shadow-sm hover:shadow-md" />
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-600">Pesanan</label>
+              <textarea id="message" name="message"
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-2 px-4 transition-colors duration-200 ease-in-out shadow-sm hover:shadow-md resize-none"></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button
+              class="flex mx-auto text-white bg-orange-500 from-indigo-500 to-blue-500 border-0 py-2 px-8 focus:outline-none hover:from-blue-600 hover:to-indigo-600 rounded text-lg shadow-lg transition-transform transform hover:scale-105">
+              Pesan Sekarang
+            </button>
+          </div>
+          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+            <span class="inline-flex">
+              <a class="text-gray-500 hover:text-indigo-500 transition-colors duration-200 ease-in-out">
+                <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500 hover:text-indigo-500 transition-colors duration-200 ease-in-out">
+                <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500 hover:text-indigo-500 transition-colors duration-200 ease-in-out">
+                <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-4 text-gray-500 hover:text-indigo-500 transition-colors duration-200 ease-in-out">
+                <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer text-gray-600 body-font bg-gradient-to-r from-blue-900 via-gray-800 to-blue-900 relative">
+    <div class="absolute inset-0 border-4 border-transparent bg-gradient-to-r from-blue-900 via-gray-800 to-blue-900">
+    </div>
+    <div class="relative z-10 container mx-auto py-4 px-3">
+      <div class="flex flex-col items-center">
+        <a href="https://flowbite.com/" class="footer-logo flex items-center mb-2">
+          <img src="" class="" alt="" />
+          <span class="footer-logo-text text-lg font-semibold ml-1">MeAja</span>
+        </a>
+        <ul class="footer-links flex space-x-4 mb-2 text-sm">
+          <li>
+            <a href="#" class="footer-link hover:text-gray-800">About</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link hover:text-gray-800">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link hover:text-gray-800">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link hover:text-gray-800">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="footer-divider border-t border-gray-300 my-2" />
+      <span class="footer-text text-xs text-gray-500">© 2023
+        <a href="" class="footer-text-link text-gray-800 hover:underline"></a>. All Rights Reserved.</span>
+    </div>
+  </footer>
+</body>
+
+</html>
